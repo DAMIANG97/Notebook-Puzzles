@@ -12,22 +12,22 @@ EditorBuildSettings:
     path: Assets/Scenes/Recevie20.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
-    path: Assets/Scenes/Riddle2.unity
+    path: Assets/Scenes/LightCross.unity
     guid: e65b53256fb0710468bedf1035d8dbbd
   - enabled: 1
-    path: Assets/Scenes/Riddle3.unity
+    path: Assets/Scenes/Light137.unity
     guid: 989c610a98df87447ae0b0759dc28b98
   - enabled: 1
-    path: Assets/Scenes/Riddle4.unity
+    path: Assets/Scenes/SwapTime.unity
     guid: a0f4c2158c468924e85cc0ce9b2f6a82
   - enabled: 1
-    path: Assets/Scenes/Riddle5.unity
+    path: Assets/Scenes/OZI-021.unity
     guid: edb379f0080ed014587eb849466b7e64
   - enabled: 1
-    path: Assets/Scenes/Riddle 6.unity
+    path: Assets/Scenes/LightEight.unity
     guid: dee5b61e8eadc2b4bacba5d434c9f1ac
   - enabled: 1
-    path: Assets/Scenes/Riddle 7.unity
+    path: Assets/Scenes/LightRedSym.unity
     guid: 06b4ff4dada6ea1448fefd8cda0acc47
   - enabled: 1
     path: Assets/Scenes/End.unity
