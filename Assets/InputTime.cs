@@ -6,9 +6,13 @@ using UnityEngine.UI;
 public class InputTime : MonoBehaviour
 {
     public TMP_InputField timeInputField;
-    public int LevelIndex;
+    private int LevelIndex;
     public string CorrectAnswer;
 
+void Start(){
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        LevelIndex = currentSceneIndex+1;
+}
     public void OnTimeInputChange()
     {
         // Zamiana obu wartości na małe litery przed porównaniem

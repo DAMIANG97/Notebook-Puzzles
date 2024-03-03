@@ -9,8 +9,10 @@ public class ChangeSign : MonoBehaviour
     private TextMeshProUGUI SignText2;
     private TextMeshProUGUI SignText3;
     public TextMeshProUGUI buttonText;
-    public int LevelIndex;
+    private int LevelIndex;
 private void Start(){
+    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+    LevelIndex = currentSceneIndex+1;
     SignText1 = GameObject.Find("FirstSignText").GetComponent<TextMeshProUGUI>();
     SignText2 = GameObject.Find("SecondSignText").GetComponent<TextMeshProUGUI>();
     SignText3 = GameObject.Find("ThirdSignText").GetComponent<TextMeshProUGUI>();

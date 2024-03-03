@@ -39,6 +39,27 @@ EditorBuildSettings:
     path: Assets/Scenes/ReverseLightSquare.unity
     guid: bd3ffcab65742c4438fbf4dd563ba499
   - enabled: 1
+    path: Assets/Scenes/Light3xRowColumns.unity
+    guid: e42de3cc2352fd84897dc1e33e867567
+  - enabled: 1
+    path: Assets/Scenes/Light4xRowColumns.unity
+    guid: 151f14eb72087f840afc4637bd488357
+  - enabled: 1
+    path: Assets/Scenes/H2O.unity
+    guid: 1d2a617f47c29fb4e8191b6332d8f1e7
+  - enabled: 1
+    path: Assets/Scenes/Rainbow.unity
+    guid: 5b1cdd063cae1ef458beb07f69957fc1
+  - enabled: 1
+    path: Assets/Scenes/TangleNumbers.unity
+    guid: 94b22d52e91ce58428c4b4fa1da0430e
+  - enabled: 1
+    path: Assets/Scenes/Bluetooth.unity
+    guid: ec01a7e6caf24da4fbcdbad4a96e7aa3
+  - enabled: 1
+    path: Assets/Scenes/BlueYellowGreen.unity
+    guid: b194360acb1c4c44f80d231d5820f4b8
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:
