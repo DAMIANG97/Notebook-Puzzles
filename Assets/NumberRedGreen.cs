@@ -7,10 +7,14 @@ public class NumberRedGreen : MonoBehaviour
 {
     public TMP_InputField greenInputField;
     public TMP_InputField redInputField;
-            public int LevelIndex;
+    private int LevelIndex;
             public string CorrectAnswerGreen;
             public string CorrectAnswerRed;
-
+    void Start()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        LevelIndex = currentSceneIndex+1;
+    }
     public void InputChange()
     {
         // Sprawdzamy, czy wartość pola wejściowego to "23:05:14"

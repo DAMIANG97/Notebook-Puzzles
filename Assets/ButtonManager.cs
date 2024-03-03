@@ -8,10 +8,14 @@ public class ButtonManager : MonoBehaviour
     public List<ChangeButtonImage> buttonsOn;
     public List<ChangeButtonImage> buttonsOff;
 
-        public int LevelIndex;
+    private int LevelIndex;
+
+
 
     void Start()
     {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        LevelIndex = currentSceneIndex+1;
         // Przy starcie gry sprawdzamy, czy wymagane przyciski są ustawione jako "on"
         CheckButtons();
     }
@@ -55,6 +59,7 @@ public class ButtonManager : MonoBehaviour
 
     private void AllButtonsOnAction()
     {
+
         // Tutaj możesz wpisać kod akcji, który ma zostać wykonany, gdy wszystkie przyciski ustawione jako "on" są w stanie "on", a wszystkie przyciski ustawione jako "off" są w stanie "off"
         SceneManager.LoadScene(LevelIndex);
     }

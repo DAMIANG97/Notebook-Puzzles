@@ -8,11 +8,12 @@ public class RowColumnsBtnManager : MonoBehaviour
     public List<ToggleTagBtn> buttonsOn;
     public List<ToggleTagBtn> buttonsOff;
 
-        public int LevelIndex;
+    private int LevelIndex;
 
     void Start()
     {
-        // Przy starcie gry sprawdzamy, czy wymagane przyciski są ustawione jako "on"
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        LevelIndex = currentSceneIndex+1;
         CheckButtons();
     }
 
