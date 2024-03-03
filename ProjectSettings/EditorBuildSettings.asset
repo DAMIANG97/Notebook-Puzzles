@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LightEight.unity
     guid: dee5b61e8eadc2b4bacba5d434c9f1ac
   - enabled: 1
+    path: Assets/Scenes/ReverseLightSquare.unity
+    guid: bd3ffcab65742c4438fbf4dd563ba499
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:
