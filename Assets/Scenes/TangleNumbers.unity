@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInputField: {fileID: 1974741783}
-  CorrectAnswer: 021
+  CorrectAnswer: 406
 --- !u!224 &1974741785
 RectTransform:
   m_ObjectHideFlags: 0
