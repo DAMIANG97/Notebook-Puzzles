@@ -21,7 +21,6 @@ public class ChangeButtonImage : MonoBehaviour
         isOn = !isOn;
         SetButtonState(isOn);
 
-        // Po zmianie stanu przycisku, wywołujemy funkcję w menedżerze przycisków
         ButtonManager buttonManager = FindObjectOfType<ButtonManager>();
         if (buttonManager != null)
         {

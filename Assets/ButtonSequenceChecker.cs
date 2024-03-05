@@ -21,9 +21,9 @@ public class ButtonSequenceChecker : MonoBehaviour
     {
         if (inputEnabled)
         {
-            inputEnabled = false; // Wyłącz możliwość kolejnych kliknięć
+            inputEnabled = false;
 
-            StartCoroutine(EnableInputAfterDelay(0.1f)); // Włącz możliwość kolejnych kliknięć po krótkim opóźnieniu
+            StartCoroutine(EnableInputAfterDelay(0.1f));
 
             if (button == sequence[currentIndex])
             {

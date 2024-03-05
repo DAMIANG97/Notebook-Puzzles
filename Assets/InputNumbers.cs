@@ -28,7 +28,6 @@ public class InputNumbers : MonoBehaviour
     {
         if (inputFields.Count != correctAnswers.Count)
         {
-            Debug.LogError("Number of input fields does not match number of correct answers!");
             return false;
         }
 

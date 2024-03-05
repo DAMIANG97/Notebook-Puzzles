@@ -72,6 +72,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GreenBlueYellow.unity
     guid: d2a12bf1cdb410a45b570562ff71d8b2
   - enabled: 1
+    path: Assets/Scenes/New Scene.unity
+    guid: 877c688a32032b140a745407621a1c25
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:

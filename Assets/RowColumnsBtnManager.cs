@@ -19,7 +19,6 @@ public class RowColumnsBtnManager : MonoBehaviour
 
     public void ButtonStateChanged()
     {
-        // Kiedy zmienia się stan przycisku, sprawdzamy, czy wymagane przyciski są ustawione jako "on"
         CheckButtons();
     }
 
@@ -27,7 +26,6 @@ public class RowColumnsBtnManager : MonoBehaviour
     {
         bool allButtonsOn = true;
 
-        // Sprawdzamy, czy przyciski ustawione jako "on" są w stanie "on"
         foreach (ToggleTagBtn button in buttonsOn)
         {
             if (!button.IsOn())
@@ -37,7 +35,6 @@ public class RowColumnsBtnManager : MonoBehaviour
             }
         }
 
-        // Sprawdzamy, czy przyciski ustawione jako "off" są w stanie "off"
         foreach (ToggleTagBtn button in buttonsOff)
         {
             if (button.IsOn())
@@ -47,7 +44,6 @@ public class RowColumnsBtnManager : MonoBehaviour
             }
         }
 
-        // Jeśli wszystkie przyciski ustawione jako "on" są w stanie "on" i wszystkie przyciski ustawione jako "off" są w stanie "off"
         if (allButtonsOn)
         {
             AllButtonsOnAction();

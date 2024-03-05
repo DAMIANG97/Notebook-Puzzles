@@ -16,13 +16,11 @@ public class ButtonManager : MonoBehaviour
     {
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         LevelIndex = currentSceneIndex+1;
-        // Przy starcie gry sprawdzamy, czy wymagane przyciski są ustawione jako "on"
         CheckButtons();
     }
 
     public void ButtonStateChanged()
     {
-        // Kiedy zmienia się stan przycisku, sprawdzamy, czy wymagane przyciski są ustawione jako "on"
         CheckButtons();
     }
 
@@ -30,7 +28,6 @@ public class ButtonManager : MonoBehaviour
     {
         bool allButtonsOn = true;
 
-        // Sprawdzamy, czy przyciski ustawione jako "on" są w stanie "on"
         foreach (ChangeButtonImage button in buttonsOn)
         {
             if (!button.IsOn())
@@ -40,7 +37,6 @@ public class ButtonManager : MonoBehaviour
             }
         }
 
-        // Sprawdzamy, czy przyciski ustawione jako "off" są w stanie "off"
         foreach (ChangeButtonImage button in buttonsOff)
         {
             if (button.IsOn())
@@ -50,7 +46,6 @@ public class ButtonManager : MonoBehaviour
             }
         }
 
-        // Jeśli wszystkie przyciski ustawione jako "on" są w stanie "on" i wszystkie przyciski ustawione jako "off" są w stanie "off"
         if (allButtonsOn)
         {
             AllButtonsOnAction();
@@ -59,8 +54,6 @@ public class ButtonManager : MonoBehaviour
 
     private void AllButtonsOnAction()
     {
-
-        // Tutaj możesz wpisać kod akcji, który ma zostać wykonany, gdy wszystkie przyciski ustawione jako "on" są w stanie "on", a wszystkie przyciski ustawione jako "off" są w stanie "off"
         SceneManager.LoadScene(LevelIndex);
     }
 }

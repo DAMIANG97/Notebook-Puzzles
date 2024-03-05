@@ -15,14 +15,11 @@ void Start(){
 }
     public void OnTimeInputChange()
     {
-        // Zamiana obu wartości na małe litery przed porównaniem
         string inputText = timeInputField.text.ToLower();
         string correctAnswerLower = CorrectAnswer.ToLower();
 
-        // Sprawdzamy, czy wartość pola wejściowego to poprawna odpowiedź (bez względu na wielkość liter)
         if (inputText == correctAnswerLower)
         {
-            // Tutaj możemy wpisać kod akcji, który ma zostać wykonany
             SceneManager.LoadScene(LevelIndex);
         }
     }
