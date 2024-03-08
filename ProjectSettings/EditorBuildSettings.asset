@@ -78,6 +78,15 @@ EditorBuildSettings:
     path: Assets/Scenes/NumberSnake31.unity
     guid: ecb3fa39ff531954e93dbee898548c3b
   - enabled: 1
+    path: Assets/Scenes/At.unity
+    guid: aca98d5a0aa257847b4aea20d57c3329
+  - enabled: 1
+    path: Assets/Scenes/Note.unity
+    guid: 45d68fc6b2305bc48bf0ef9e244ae57e
+  - enabled: 1
+    path: Assets/Scenes/Ook.unity
+    guid: 5b1ec117fcbecc142838935c41b84677
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:
