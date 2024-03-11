@@ -102,7 +102,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SumSquares.unity
     guid: f4a55aa2c5d83a247a1d3a04001f85af
   - enabled: 1
-    path: Assets/Scenes/New Scene.unity
+    path: Assets/Scenes/Maze.unity
     guid: dd7665e1cefe0a14888f9e7e79dfd0d3
   - enabled: 1
     path: Assets/Scenes/End.unity
