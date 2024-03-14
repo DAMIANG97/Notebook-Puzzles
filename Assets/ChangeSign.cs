@@ -30,7 +30,7 @@ private void Start(){
         string value3 = SignText3.text;
         if (value1 == "÷" && value2 == "+" && value3 == "×")
         {
-        SceneManager.LoadScene(LevelIndex);
+GameManager.LoadNextScene();
         }
     }
 }

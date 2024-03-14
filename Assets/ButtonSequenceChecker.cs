@@ -49,7 +49,6 @@ public class ButtonSequenceChecker : MonoBehaviour
 
     void LoadNextScene()
     {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex + 1);
+GameManager.LoadNextScene();
     }
 }

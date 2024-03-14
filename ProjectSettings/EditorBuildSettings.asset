@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 69c0ccaf30b277445bae973091c82e2c
   - enabled: 1
     path: Assets/Scenes/Recevie20.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
@@ -89,9 +89,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SumTangles.unity
     guid: 7f951d20e2a838b4d9a7093e0af18a60
-  - enabled: 1
-    path: Assets/Scenes/117.unity
-    guid: 1db881dc9b77489459b11eeaed94bf33
   - enabled: 1
     path: Assets/Scenes/TwoIsFour.unity
     guid: b6efbcb770ea9e54084a5365b7b4bd64

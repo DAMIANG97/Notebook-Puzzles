@@ -20,7 +20,7 @@ void Start(){
 
         if (inputText == correctAnswerLower)
         {
-            SceneManager.LoadScene(LevelIndex);
+GameManager.LoadNextScene();
         }
     }
 }

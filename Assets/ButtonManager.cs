@@ -54,6 +54,6 @@ public class ButtonManager : MonoBehaviour
 
     private void AllButtonsOnAction()
     {
-        SceneManager.LoadScene(LevelIndex);
+GameManager.LoadNextScene();
     }
 }

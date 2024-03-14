@@ -52,6 +52,6 @@ public class RowColumnsBtnManager : MonoBehaviour
 
     private void AllButtonsOnAction()
     {
-        SceneManager.LoadScene(LevelIndex);
+GameManager.LoadNextScene();
     }
 }

@@ -20,7 +20,7 @@ public class InputNumbers : MonoBehaviour
     {
         if (CheckAnswers())
         {
-            SceneManager.LoadScene(LevelIndex);
+GameManager.LoadNextScene();
         }
     }
 
