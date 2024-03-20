@@ -30,17 +30,17 @@ EditorBuildSettings:
     path: Assets/Scenes/LightRedSym.unity
     guid: 06b4ff4dada6ea1448fefd8cda0acc47
   - enabled: 1
-    path: Assets/Scenes/QuantityOfSquares.unity
-    guid: 543e8c748005b2043b40f6db32a9dbe7
-  - enabled: 1
     path: Assets/Scenes/LightEight.unity
     guid: dee5b61e8eadc2b4bacba5d434c9f1ac
   - enabled: 1
-    path: Assets/Scenes/ReverseLightSquare.unity
-    guid: bd3ffcab65742c4438fbf4dd563ba499
+    path: Assets/Scenes/QuantityOfSquares.unity
+    guid: 543e8c748005b2043b40f6db32a9dbe7
   - enabled: 1
     path: Assets/Scenes/10.unity
     guid: 762a31b15a0230844b8036508f70f309
+  - enabled: 1
+    path: Assets/Scenes/ReverseLightSquare.unity
+    guid: bd3ffcab65742c4438fbf4dd563ba499
   - enabled: 1
     path: Assets/Scenes/Light3xRowColumns.unity
     guid: e42de3cc2352fd84897dc1e33e867567
