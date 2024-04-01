@@ -1343,10 +1343,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 826164071}
   hints:
-  - Draw a number.
-  - Number of level.
-  - 19
-  - Click on buttons to draw 19
+  - A combination of two words
+  - What is the tooth like?
+  - Color is a clue
+  - Blue tooth
+  - Bluetooth
 --- !u!114 &1062618514
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3988,8 +3988,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 1984730121}
   hints:
-  - Draw a number.
-  - Number of level.
+  - Draw a number
+  - Number of level
   - 19
   - Click on buttons to draw 19
 --- !u!114 &1554575807

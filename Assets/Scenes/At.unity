@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 1447172630}
   hints:
-  - Symbol
+  - Write a symbol
   - Which word you can change to symbol?
   - Write at
   - '@'

@@ -1173,6 +1173,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[0]
+      value: Mix both
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[1]
+      value: Anagram
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[2]
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[3]
+      value: Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[4]
+      value: Green
+      objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
