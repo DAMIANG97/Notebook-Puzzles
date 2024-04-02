@@ -1334,6 +1334,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[0]
+      value: Mark all squares
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[1]
+      value: Click on buttons to draw 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[2]
+      value: Click on buttons to draw 19
+      objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

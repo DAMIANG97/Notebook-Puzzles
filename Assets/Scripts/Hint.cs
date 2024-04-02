@@ -15,5 +15,6 @@ public class Hint : MonoBehaviour
     {
         hintText.text = hints[currentIndex];
         currentIndex = (currentIndex + 1) % hints.Count;
+        Debug.Log("siema");
     }
 }
