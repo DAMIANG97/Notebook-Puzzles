@@ -2496,13 +2496,57 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1614368844}
     m_Modifications:
+    - target: {fileID: 952645863431584203, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 179.2524
+      objectReference: {fileID: 0}
+    - target: {fileID: 952645863431584203, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 29.999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182748457753993043, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182748457753993043, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182748457753993043, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182748457753993043, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1182748457753993043, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2530357791197517316, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[0]
+      value: Maze
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[1]
+      value: Follow the line
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[2]
+      value: Start Bottom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[3]
-      value: Left Top Right Blue Right Top Left Top Yellow Left Bottom Blue
+      value: Left Up Right Blue Right Up Left Up Yellow Left Bottom Blue
       objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x

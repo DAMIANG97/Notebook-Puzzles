@@ -1509,6 +1509,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[0]
+      value: Write a note with a quote
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[1]
+      value: Just write a note with a quote
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[2]
+      value: Literally write a note with a quote
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[3]
+      value: '"quote"'
+      objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
