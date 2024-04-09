@@ -1,10 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonClickSoundManager : MonoBehaviour
+public class MoveButton : MonoBehaviour
 {
     private AudioSource audioSource;
-
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -13,7 +12,10 @@ public class ButtonClickSoundManager : MonoBehaviour
         
         foreach (Button button in buttons)
         {
-            button.onClick.AddListener(PlayButtonClickSound);
+            if (button.tag == "NotToMark")
+            {
+                button.onClick.AddListener(PlayButtonClickSound);
+            }
         }
     }
     void PlayButtonClickSound()
