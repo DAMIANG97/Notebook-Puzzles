@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 7409067735927991719}
   - component: {fileID: 6635150359776427566}
   - component: {fileID: 4540791461171502027}
+  - component: {fileID: 5471487843898766834}
   m_Layer: 0
   m_Name: Ads
   m_TagString: Untagged
@@ -320,6 +321,18 @@ MonoBehaviour:
   _iOSGameId: 5595960
   _testMode: 1
   rewardedAds: {fileID: 6635150359776427566}
+--- !u!114 &5471487843898766834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191141410407465732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98de28334929c3c408febe85d6ab9207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2530357791197517316
 GameObject:
   m_ObjectHideFlags: 0
