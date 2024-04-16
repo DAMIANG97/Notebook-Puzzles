@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
 
 public class ChangeButtonImage : MonoBehaviour
 {
     public Sprite imageOn;
     public Sprite imageOff;
+    public Sprite ImageOff => imageOff;
 
     private Image buttonImage;
     private bool isOn = false;
@@ -13,13 +13,20 @@ public class ChangeButtonImage : MonoBehaviour
     void Start()
     {
         buttonImage = GetComponent<Image>();
-        SetButtonState(isOn);
+        SetButtonState(isOn, imageOff);
     }
 
     public void ToggleButton()
     {
         isOn = !isOn;
-        SetButtonState(isOn);
+        if (isOn)
+        {
+            SetButtonState(true, imageOn);
+        }
+        else
+        {
+            SetButtonState(false, imageOff);
+        }
 
         ButtonManager buttonManager = FindObjectOfType<ButtonManager>();
         if (buttonManager != null)
@@ -28,16 +35,10 @@ public class ChangeButtonImage : MonoBehaviour
         }
     }
 
-    private void SetButtonState(bool state)
+    public void SetButtonState(bool state, Sprite sprite)
     {
-        if (state)
-        {
-            buttonImage.sprite = imageOn;
-        }
-        else
-        {
-            buttonImage.sprite = imageOff;
-        }
+        buttonImage.sprite = sprite;
+        isOn = state;
     }
 
     public bool IsOn()

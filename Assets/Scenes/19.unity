@@ -3068,6 +3068,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6916576260674883812, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: offSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7645db1e6f5a43848bcbb9635672d4f3, type: 3}
+    - target: {fileID: 6916576260674883812, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: buttonImageController
+      value: 
+      objectReference: {fileID: 1850550504}
     m_RemovedComponents: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}

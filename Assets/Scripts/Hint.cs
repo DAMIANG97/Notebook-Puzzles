@@ -6,15 +6,27 @@ using System.Collections.Generic;
 
 public class Hint : MonoBehaviour
 {
-
     public TextMeshProUGUI hintText;
     private int currentIndex = 0;
-    public List<string> hints = new List<string>(); 
+    public List<string> hints = new List<string>();
+    
+    private float lastChangeTime;
+    public float minChangeInterval = 1f;
+
+    private void Start()
+    {
+        lastChangeTime = -minChangeInterval;
+    }
 
     public void ChangeText()
     {
-        hintText.text = hints[currentIndex];
-        currentIndex = (currentIndex + 1) % hints.Count;
-        Debug.Log("siema");
+        if (Time.time - lastChangeTime >= minChangeInterval)
+        {
+            hintText.text = hints[currentIndex];
+            currentIndex = (currentIndex + 1) % hints.Count;
+            Debug.Log(hintText.text);
+
+            lastChangeTime = Time.time; 
+        }
     }
 }
