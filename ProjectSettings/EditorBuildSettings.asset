@@ -9,44 +9,44 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 69c0ccaf30b277445bae973091c82e2c
   - enabled: 1
-    path: Assets/Scenes/Recevie20.unity
-    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
-  - enabled: 1
     path: Assets/Scenes/LightCross.unity
     guid: e65b53256fb0710468bedf1035d8dbbd
   - enabled: 1
     path: Assets/Scenes/Light137.unity
     guid: 989c610a98df87447ae0b0759dc28b98
   - enabled: 1
-    path: Assets/Scenes/Earth.unity
-    guid: 861385c22c766c2488265c788f31dd83
-  - enabled: 1
-    path: Assets/Scenes/SwapTime.unity
-    guid: a0f4c2158c468924e85cc0ce9b2f6a82
-  - enabled: 1
-    path: Assets/Scenes/OZI-021.unity
-    guid: edb379f0080ed014587eb849466b7e64
-  - enabled: 1
-    path: Assets/Scenes/LightRedSym.unity
-    guid: 06b4ff4dada6ea1448fefd8cda0acc47
-  - enabled: 1
-    path: Assets/Scenes/LightEight.unity
-    guid: dee5b61e8eadc2b4bacba5d434c9f1ac
-  - enabled: 1
-    path: Assets/Scenes/QuantityOfSquares.unity
-    guid: 543e8c748005b2043b40f6db32a9dbe7
-  - enabled: 1
-    path: Assets/Scenes/10.unity
-    guid: 762a31b15a0230844b8036508f70f309
-  - enabled: 1
-    path: Assets/Scenes/ReverseLightSquare.unity
-    guid: bd3ffcab65742c4438fbf4dd563ba499
-  - enabled: 1
     path: Assets/Scenes/Light3xRowColumns.unity
     guid: e42de3cc2352fd84897dc1e33e867567
   - enabled: 1
     path: Assets/Scenes/Light4xRowColumns.unity
     guid: 151f14eb72087f840afc4637bd488357
+  - enabled: 1
+    path: Assets/Scenes/OZI-021.unity
+    guid: edb379f0080ed014587eb849466b7e64
+  - enabled: 1
+    path: Assets/Scenes/SwapTime.unity
+    guid: a0f4c2158c468924e85cc0ce9b2f6a82
+  - enabled: 1
+    path: Assets/Scenes/Recevie20.unity
+    guid: 3fc8acdd13e6c734bafef6554d6fdbcd
+  - enabled: 1
+    path: Assets/Scenes/LightEight.unity
+    guid: dee5b61e8eadc2b4bacba5d434c9f1ac
+  - enabled: 1
+    path: Assets/Scenes/Earth.unity
+    guid: 861385c22c766c2488265c788f31dd83
+  - enabled: 1
+    path: Assets/Scenes/10.unity
+    guid: 762a31b15a0230844b8036508f70f309
+  - enabled: 1
+    path: Assets/Scenes/LightRedSym.unity
+    guid: 06b4ff4dada6ea1448fefd8cda0acc47
+  - enabled: 1
+    path: Assets/Scenes/QuantityOfSquares.unity
+    guid: 543e8c748005b2043b40f6db32a9dbe7
+  - enabled: 1
+    path: Assets/Scenes/ReverseLightSquare.unity
+    guid: bd3ffcab65742c4438fbf4dd563ba499
   - enabled: 1
     path: Assets/Scenes/H2O.unity
     guid: 1d2a617f47c29fb4e8191b6332d8f1e7
@@ -99,8 +99,38 @@ EditorBuildSettings:
     path: Assets/Scenes/SumSquares.unity
     guid: f4a55aa2c5d83a247a1d3a04001f85af
   - enabled: 1
+    path: Assets/Scenes/Boats.unity
+    guid: a4528b0dedf4f7e4793d562af2ae9325
+  - enabled: 1
     path: Assets/Scenes/Maze.unity
     guid: dd7665e1cefe0a14888f9e7e79dfd0d3
+  - enabled: 1
+    path: Assets/Scenes/Boats3.unity
+    guid: 95204056623512645a95f97b7982b55c
+  - enabled: 1
+    path: Assets/Scenes/TeleportMaze.unity
+    guid: 870f726921a721f43a3c94c9871b3431
+  - enabled: 1
+    path: Assets/Scenes/Tetris.unity
+    guid: 8a4c5590ee70bd04dbd6df6295d8af6f
+  - enabled: 1
+    path: Assets/Scenes/Sea.unity
+    guid: 255d08fe4e4e3ef45a3e1cd81112b0bb
+  - enabled: 1
+    path: Assets/Scenes/Mountains.unity
+    guid: 346d07e7469ed534683f6e33f9e7d7e9
+  - enabled: 1
+    path: Assets/Scenes/HalfTwiceEquals.unity
+    guid: 650fca1a63554c84ca01a9c48e1ebb7b
+  - enabled: 1
+    path: Assets/Scenes/MovingColors.unity
+    guid: 3f77c1796d4facd4f90355d9f23d9826
+  - enabled: 1
+    path: Assets/Scenes/SumDifference.unity
+    guid: 433f023bf6616aa42ae14c8d8d95aa71
+  - enabled: 1
+    path: Assets/Scenes/Chess.unity
+    guid: 03f3b7307666a354bb2f3dbecbd02208
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0

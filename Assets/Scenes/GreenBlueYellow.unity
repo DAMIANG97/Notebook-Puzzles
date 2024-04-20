@@ -3058,23 +3058,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.size
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[0]
-      value: Write the number of squares
-      objectReference: {fileID: 0}
-    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
-      propertyPath: hints.Array.data[1]
       value: Write the number of squares according to the color
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
-      propertyPath: hints.Array.data[2]
+      propertyPath: hints.Array.data[1]
       value: Blue+Yellow=
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
-      propertyPath: hints.Array.data[3]
+      propertyPath: hints.Array.data[2]
       value: How many green squares can you get from what you see?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: hints.Array.data[3]
+      value: 7 9 7
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[4]

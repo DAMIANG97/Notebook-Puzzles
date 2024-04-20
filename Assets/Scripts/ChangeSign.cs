@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSign : MonoBehaviour
 {
-    private TextMeshProUGUI SignText1;
-    private TextMeshProUGUI SignText2;
-    private TextMeshProUGUI SignText3;
+    public TextMeshProUGUI SignText1;
+    public TextMeshProUGUI SignText2;
+    public TextMeshProUGUI SignText3;
     public TextMeshProUGUI buttonText;
     private int LevelIndex;
 private void Start(){
@@ -34,12 +34,3 @@ GameManager.LoadNextScene();
         }
     }
 }
-
-
-
-
-
-
-
-
-

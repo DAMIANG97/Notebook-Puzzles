@@ -7,7 +7,7 @@ public class ToggleTagBtn : MonoBehaviour
     public Sprite imageOn;
     public Sprite imageOff;
 
-    private bool isOn = false;
+    public bool isOn = false;
     public List<string> layersToToggle;
     public List<string> tagsToToggle;
 
