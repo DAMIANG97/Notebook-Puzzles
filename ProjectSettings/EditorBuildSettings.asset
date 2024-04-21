@@ -132,6 +132,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Chess.unity
     guid: 03f3b7307666a354bb2f3dbecbd02208
   - enabled: 1
+    path: Assets/Scenes/Puzzles.unity
+    guid: 3c8494bea5e4d0d428338d5ef6f898fc
+  - enabled: 1
+    path: Assets/Scenes/CompasRoseHard.unity
+    guid: 413608d7dcecebf4a9f1e096c6d06006
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:
