@@ -126,6 +126,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MovingColors.unity
     guid: 3f77c1796d4facd4f90355d9f23d9826
   - enabled: 1
+    path: Assets/Scenes/Fourty.unity
+    guid: bc1c703caa9d4cd4fa50f6de3d3aced7
+  - enabled: 1
     path: Assets/Scenes/SumDifference.unity
     guid: 433f023bf6616aa42ae14c8d8d95aa71
   - enabled: 1
@@ -141,8 +144,20 @@ EditorBuildSettings:
     path: Assets/Scenes/PurpleRobot.unity
     guid: c178c1e340c460f47ad06b05a98ddfdd
   - enabled: 1
+    path: Assets/Scenes/Charger.unity
+    guid: 46e00e32f04ad6c49a00347917c03695
+  - enabled: 1
+    path: Assets/Scenes/Erase.unity
+    guid: cef3097a394ff81408233ad0c048c320
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
+  - enabled: 1
+    path: Assets/Scenes/CompassRoseMid.unity
+    guid: 3cf37316c74656b45bf7337131d9bd1c
+  - enabled: 1
+    path: Assets/Scenes/THinK.unity
+    guid: fcf4eb971efd9a14ca9b0b005e5dd04d
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 315a38d481e84ba4582b1fd0d6994a7d, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: dfff2624b2f934f4f81b38081f91e92f, type: 2}
