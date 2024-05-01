@@ -9,6 +9,9 @@ public class ChangeSign : MonoBehaviour
     public TextMeshProUGUI SignText2;
     public TextMeshProUGUI SignText3;
     public TextMeshProUGUI buttonText;
+     public string correctValue1;
+     public string correctValue2;
+     public string correctValue3;
     private int LevelIndex;
 private void Start(){
     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -28,7 +31,8 @@ private void Start(){
         string value1 = SignText1.text;
         string value2 = SignText2.text;
         string value3 = SignText3.text;
-        if (value1 == "÷" && value2 == "+" && value3 == "×")
+
+        if (value1 == correctValue1 && value2 == correctValue2 && value3 == correctValue3)
         {
 GameManager.LoadNextScene();
         }
