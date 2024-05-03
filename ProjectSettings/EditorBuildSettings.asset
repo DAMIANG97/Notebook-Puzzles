@@ -162,6 +162,24 @@ EditorBuildSettings:
     path: Assets/Scenes/IceCubeMashine.unity
     guid: d2fd5d399a2893840ac41f6eb8a07ae6
   - enabled: 1
+    path: Assets/Scenes/HowManyTriangles.unity
+    guid: ce94131b91fa21d4db765799f7fbdebe
+  - enabled: 1
+    path: Assets/Scenes/7.unity
+    guid: 7b352fb974d663448b24abbd5b739d30
+  - enabled: 1
+    path: Assets/Scenes/Shapes.unity
+    guid: 5b06d96573f758f4288407474fd6ea14
+  - enabled: 1
+    path: Assets/Scenes/ShapeTransform.unity
+    guid: 454e05198c2765f4cb4637da08428251
+  - enabled: 1
+    path: Assets/Scenes/Envelope.unity
+    guid: 040708b6070954046a808ad6fb431816
+  - enabled: 1
+    path: Assets/Scenes/NextPage.unity
+    guid: 6738647d69804b94eaa7ea1c4ff68227
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:

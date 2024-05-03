@@ -2,17 +2,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ButtonSequenceChecker : MonoBehaviour
 {
     public Button[] sequence;
     private int currentIndex = 0;
     private bool inputEnabled = true;
+    private List<Button> allButtons = new List<Button>();
 
     void Start()
     {
-        foreach (Button button in sequence)
+        Button[] buttonsInScene = FindObjectsOfType<Button>();
+        foreach (Button button in buttonsInScene)
         {
+            allButtons.Add(button);
             button.onClick.AddListener(() => ButtonClicked(button));
         }
     }
@@ -22,7 +26,6 @@ public class ButtonSequenceChecker : MonoBehaviour
         if (inputEnabled)
         {
             inputEnabled = false;
-
             StartCoroutine(EnableInputAfterDelay(0.1f));
 
             if (button == sequence[currentIndex])
@@ -44,11 +47,11 @@ public class ButtonSequenceChecker : MonoBehaviour
     IEnumerator EnableInputAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
-        inputEnabled = true; // Włącz możliwość kolejnych kliknięć po opóźnieniu
+        inputEnabled = true;
     }
 
     void LoadNextScene()
     {
-GameManager.LoadNextScene();
+        GameManager.LoadNextScene();
     }
 }
