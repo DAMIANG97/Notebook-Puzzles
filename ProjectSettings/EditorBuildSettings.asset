@@ -180,6 +180,15 @@ EditorBuildSettings:
     path: Assets/Scenes/NextPage.unity
     guid: 6738647d69804b94eaa7ea1c4ff68227
   - enabled: 1
+    path: Assets/Scenes/NightScene.unity
+    guid: 135ea2b204cd55d4c8bcba7ef644ca95
+  - enabled: 1
+    path: Assets/Scenes/NightPassword.unity
+    guid: 7d682572d1ec7fc49968a9df4e54f4a2
+  - enabled: 1
+    path: Assets/Scenes/BoatsEmpty.unity
+    guid: 73feaa55b8d4d70439c7caa94aff9040
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:

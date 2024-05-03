@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
 
 public class LightSwitch : MonoBehaviour
 {
@@ -19,10 +20,16 @@ public class LightSwitch : MonoBehaviour
 
     private bool isWhite = true;
 
+private void Start()
+{
+    gameObject.SetActive(false);
+}
+
+
     public void ChangeColor()
     {
         Color targetColor = isWhite ? Color.white : new Color(0, 0.14f, 0.44f);
-        Color phoneColor = isWhite ? Color.white : new Color(1f, 0.99f, 0, 0.42f);
+        Color phoneColor = isWhite ? new Color(1f,1f,1f,0.4f) : new Color(1f, 0.99f, 0, 0.42f);
 
         foreach (Image image in imagesToChange)
         {
