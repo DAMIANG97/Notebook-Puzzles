@@ -189,6 +189,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BoatsEmpty.unity
     guid: 73feaa55b8d4d70439c7caa94aff9040
   - enabled: 1
+    path: Assets/Scenes/TheEnd.unity
+    guid: 51a78a2fbe545864da803bfb146c0c4b
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 9cc53d670bbc7334f8683e8aeb147bc0
   m_configObjects:

@@ -6,11 +6,16 @@ public class LoadSceneIndex : MonoBehaviour
 {
 
     private TextMeshProUGUI SceneNumber;
-    void Start()
+    void Update()
     {
 
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int currentSceneIndex = GameManager.currentSceneIndex;
         SceneNumber = GameObject.Find("SceneNumber").GetComponent<TextMeshProUGUI>();
+        if(currentSceneIndex==0){
+            SceneNumber.text = "1";
+        }
+        else{
         SceneNumber.text = currentSceneIndex.ToString();
+        }
     }
 }
