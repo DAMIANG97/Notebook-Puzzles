@@ -13,17 +13,18 @@ public static class GameManager
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-    private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+    if (scene.name != "End" && scene.buildIndex > lastStartedSceneIndex)
     {
-        if (scene.buildIndex > lastStartedSceneIndex)
-        {
-            lastStartedSceneIndex = scene.buildIndex;
-            PlayerPrefs.SetInt("LastStartedSceneIndex", lastStartedSceneIndex);
-            PlayerPrefs.Save();
-        }
-
-        currentSceneIndex = scene.buildIndex;
+        lastStartedSceneIndex = scene.buildIndex;
+        PlayerPrefs.SetInt("LastStartedSceneIndex", lastStartedSceneIndex);
+        PlayerPrefs.Save();
     }
+
+    currentSceneIndex = scene.buildIndex;
+}
+
 
     public static void Incrementlevel()
     {
