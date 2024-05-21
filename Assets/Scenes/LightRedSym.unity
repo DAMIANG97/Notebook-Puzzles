@@ -1959,7 +1959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[2]
-      value: Left top, middle, Right middle, Middle Bottom
+      value: 1-1, 2-2, 2-3, 3-2
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[3]

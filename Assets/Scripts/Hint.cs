@@ -22,10 +22,8 @@ public class Hint : MonoBehaviour
     {
         if (Time.time - lastChangeTime >= minChangeInterval)
         {
-            hintText.text = hints[currentIndex];
+            hintText.text =$"({currentIndex+1}/{hints.Count}) hint: {hints[currentIndex]}";
             currentIndex = (currentIndex + 1) % hints.Count;
-            Debug.Log(hintText.text);
-
             lastChangeTime = Time.time; 
         }
     }

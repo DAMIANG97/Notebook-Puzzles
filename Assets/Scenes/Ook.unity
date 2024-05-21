@@ -598,7 +598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Read a book
+  m_text: Read a notebook
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0531aea43015f24e8515abcaf3f2883, type: 2}
   m_sharedMaterial: {fileID: 8150514673137903597, guid: f0531aea43015f24e8515abcaf3f2883, type: 2}

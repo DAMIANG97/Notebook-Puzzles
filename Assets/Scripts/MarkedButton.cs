@@ -13,7 +13,7 @@ public class MarkedButton : MonoBehaviour
         
         foreach (Button button in buttons)
         {
-            if (button.tag != "NotToMark")
+            if (button.tag != "NotToMark" && button.tag != "SilentButton")
             {
                 button.onClick.AddListener(PlayButtonClickSound);
             }
