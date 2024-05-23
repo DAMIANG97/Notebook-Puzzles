@@ -54,7 +54,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Rainbow.unity
     guid: 5b1cdd063cae1ef458beb07f69957fc1
   - enabled: 1
-    path: Assets/Scenes/TangleNumbers.unity
+    path: Assets/Scenes/AngleNumbers.unity
     guid: 94b22d52e91ce58428c4b4fa1da0430e
   - enabled: 1
     path: Assets/Scenes/Bluetooth.unity

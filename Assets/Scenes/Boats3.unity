@@ -1065,6 +1065,8 @@ MonoBehaviour:
   - a10,b10,c10,g6,g7,g8
   - g6 g7 g8 a10 b10 c10
   - a10 b10 c10 g6 g7 g8
+  - g6, g7, g8, a10, b10, c10
+  - a10, b10, c10, g6, g7, g8
 --- !u!1 &2016606108
 GameObject:
   m_ObjectHideFlags: 0

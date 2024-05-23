@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[1]
-      value: Destroy ships
+      value: Adapt answer to the picture
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[2]
-      value: Adapt answer to the picture
+      value: Destroyed ship
       objectReference: {fileID: 0}
     - target: {fileID: 2558405255111486469, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: hints.Array.data[3]
@@ -1152,6 +1152,7 @@ MonoBehaviour:
   - g6 g7 g8
   - g6-g7-g8
   - g6,g7,g8
+  - g6, g7, g8
 --- !u!1001 &2118064000
 PrefabInstance:
   m_ObjectHideFlags: 0
