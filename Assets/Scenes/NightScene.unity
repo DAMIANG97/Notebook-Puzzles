@@ -175,6 +175,18 @@ PrefabInstance:
       propertyPath: hints.Array.data[4]
       value: Turn the light on
       objectReference: {fileID: 0}
+    - target: {fileID: 2923541440484713481, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43921572
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923541440484713481, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_Color.g
+      value: 0.14117648
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923541440484713481, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -803,8 +815,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602661652}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 228, y: 127, z: 1}
+  m_LocalPosition: {x: 0.6313, y: -0.1981, z: 0}
+  m_LocalScale: {x: 249.7085, y: 135.03847, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 18778801}

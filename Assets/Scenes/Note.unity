@@ -956,7 +956,7 @@ GameObject:
   - component: {fileID: 1343631540}
   - component: {fileID: 1343631539}
   - component: {fileID: 1343631536}
-  - component: {fileID: 1343631537}
+  - component: {fileID: 1343631541}
   m_Layer: 5
   m_Name: Input
   m_TagString: Untagged
@@ -1044,9 +1044,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1343631537}
-        m_TargetAssemblyTypeName: InputTime, Assembly-CSharp
-        m_MethodName: OnTimeInputChange
+      - m_Target: {fileID: 1343631541}
+        m_TargetAssemblyTypeName: MultipleAnswers, Assembly-CSharp
+        m_MethodName: OnInputChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1074,20 +1074,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &1343631537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343631535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c05a2f99da867488f83ded9be0b1dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeInputField: {fileID: 1343631536}
-  CorrectAnswer: '"note"'
 --- !u!224 &1343631538
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1147,6 +1133,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343631535}
   m_CullTransparentMesh: 1
+--- !u!114 &1343631541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343631535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: babf74e8526821e47a182163ee06b5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MultipleInputField: {fileID: 1343631536}
+  CorrectAnswers:
+  - '"note"'
+  - "\u201Enote\""
+  - "\xBBnote\xAB"
+  - "\u2018note\u2019"
 --- !u!1 &1346255238
 GameObject:
   m_ObjectHideFlags: 0

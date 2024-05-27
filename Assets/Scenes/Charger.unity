@@ -238,7 +238,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2015257281}
-  - {fileID: 1236213000}
   - {fileID: 464897549}
   m_Father: {fileID: 1328992398}
   m_RootOrder: -1
@@ -541,7 +540,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1236212999
+--- !u!1 &938412423
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,43 +548,43 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1236213000}
-  - component: {fileID: 1236213002}
-  - component: {fileID: 1236213001}
+  - component: {fileID: 938412424}
+  - component: {fileID: 938412426}
+  - component: {fileID: 938412425}
   m_Layer: 5
-  m_Name: Baterry
+  m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1236213000
+--- !u!224 &938412424
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236212999}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_GameObject: {fileID: 938412423}
+  m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1111112, y: 1.1111112, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 316759000}
+  m_Father: {fileID: 1328992399}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85.44445, y: 358.22223}
-  m_SizeDelta: {x: 15, y: 25}
+  m_AnchoredPosition: {x: 60.60011, y: -115.00009}
+  m_SizeDelta: {x: 10, y: 16}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1236213001
+--- !u!114 &938412425
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236212999}
+  m_GameObject: {fileID: 938412423}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -609,13 +608,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1236213002
+--- !u!222 &938412426
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236212999}
+  m_GameObject: {fileID: 938412423}
   m_CullTransparentMesh: 1
 --- !u!1001 &1328992397
 PrefabInstance:
@@ -657,6 +656,10 @@ PrefabInstance:
       propertyPath: hints.Array.data[5]
       value: Charger>Outlet>Phone>Charger, 1%
       objectReference: {fileID: 0}
+    - target: {fileID: 2692018369609159597, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3ba5a764aa2620149875f45f24d78da1, type: 3}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -750,22 +753,26 @@ PrefabInstance:
       value: -127.6
       objectReference: {fileID: 0}
     - target: {fileID: 6009586316766800048, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 6009586316766800048, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 315
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       insertIndex: 5
       addedObject: {fileID: 316759000}
+    - targetCorrespondingSourceObject: {fileID: 3966157292056313392, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 938412424}
   m_SourcePrefab: {fileID: 100100000, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
 --- !u!224 &1328992398 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+  m_PrefabInstance: {fileID: 1328992397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1328992399 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3966157292056313392, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
   m_PrefabInstance: {fileID: 1328992397}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1440040397 stripped

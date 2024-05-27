@@ -21,8 +21,10 @@ private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         PlayerPrefs.SetInt("LastStartedSceneIndex", lastStartedSceneIndex);
         PlayerPrefs.Save();
     }
-
-    currentSceneIndex = scene.buildIndex;
+if (scene.buildIndex !=0)
+    {
+        currentSceneIndex = scene.buildIndex;
+    }
 }
 
 
