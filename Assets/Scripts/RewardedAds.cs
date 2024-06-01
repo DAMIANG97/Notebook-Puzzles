@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Advertisements;
- 
+using System.Collections;
+
 public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
     [SerializeField] Button _showAdButton;
@@ -9,8 +10,9 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
     private Hint hint;
+
     void Awake()
-    {   
+    {
         // Get the Ad Unit ID for the current platform:
 #if UNITY_IOS
         _adUnitId = _iOSAdUnitId;
@@ -21,10 +23,30 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         // Disable the button until the ad is ready to show:
         _showAdButton.interactable = false;
     }
-    void Start(){
-            LoadAd();
+
+    void Start()
+    {
+        LoadAd();
     }
- 
+
+    void OnApplicationPause(bool pauseStatus)
+    {
+        if (!pauseStatus)
+        {
+            // Application resumed, try to reload the ad
+            LoadAd();
+        }
+    }
+
+    void OnApplicationFocus(bool hasFocus)
+    {
+        if (hasFocus)
+        {
+            // Application focused, try to reload the ad
+            LoadAd();
+        }
+    }
+
     // Call this public method when you want to get an ad ready to show.
     public void LoadAd()
     {
@@ -32,12 +54,12 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         Debug.Log("Loading Ad: " + _adUnitId);
         Advertisement.Load(_adUnitId, this);
     }
- 
+
     // If the ad successfully loads, add a listener to the button and enable it:
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
         Debug.Log("Ad Loaded: " + adUnitId);
- 
+
         if (adUnitId.Equals(_adUnitId))
         {
             // Configure the button to call the ShowAd() method when clicked:
@@ -46,7 +68,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             _showAdButton.interactable = true;
         }
     }
- 
+
     // Implement a method to execute when the user clicks the button:
     public void ShowAd()
     {
@@ -55,7 +77,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         // Then show the ad:
         Advertisement.Show(_adUnitId, this);
     }
- 
+
     // Implement the Show Listener's OnUnityAdsShowComplete callback method to determine if the user gets a reward:
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
     {
@@ -66,7 +88,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
             LoadAd();
         }
     }
- 
+
     // Implement Load and Show Listener error callbacks:
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
@@ -74,17 +96,17 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         // Use the error details to determine whether to try to load another ad.
         LoadAd();
     }
- 
+
     public void OnUnityAdsShowFailure(string adUnitId, UnityAdsShowError error, string message)
     {
         Debug.Log($"Error showing Ad Unit {adUnitId}: {error.ToString()} - {message}");
         // Use the error details to determine whether to try to load another ad.
         LoadAd();
     }
- 
+
     public void OnUnityAdsShowStart(string adUnitId) { }
     public void OnUnityAdsShowClick(string adUnitId) { }
- 
+
     void OnDestroy()
     {
         // Clean up the button listeners:

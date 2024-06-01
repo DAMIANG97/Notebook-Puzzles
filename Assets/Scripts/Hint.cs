@@ -1,30 +1,47 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 public class Hint : MonoBehaviour
 {
     public TextMeshProUGUI hintText;
+    public GameObject SkipButton;
+    public GameObject HintButton;
     private int currentIndex = 0;
     public List<string> hints = new List<string>();
-    
+
     private float lastChangeTime;
     public float minChangeInterval = 1f;
+    private bool hintsCompleted = false;
 
     private void Start()
     {
         lastChangeTime = -minChangeInterval;
+        hintText.text = "";
+        SkipButton.SetActive(false);
     }
 
     public void ChangeText()
     {
         if (Time.time - lastChangeTime >= minChangeInterval)
         {
-            hintText.text =$"({currentIndex+1}/{hints.Count}) hint: {hints[currentIndex]}";
-            currentIndex = (currentIndex + 1) % hints.Count;
-            lastChangeTime = Time.time; 
+            if (!hintsCompleted)
+            {
+                if (currentIndex >= hints.Count)
+                {
+                    hintsCompleted = true;
+                    hintText.text = "";
+                    SkipButton.SetActive(true);
+                    HintButton.SetActive(false);
+                }
+                else
+                {
+                    hintText.text = $"({currentIndex + 1}/{hints.Count}) hint: {hints[currentIndex]}";
+                    currentIndex++;
+                    lastChangeTime = Time.time;
+                }
+            }
         }
     }
 }
