@@ -7,9 +7,10 @@ using UnityEngine.SceneManagement;
 public class Skip : MonoBehaviour
 {
         private int currentSceneIndex;
-public void SkipScene () {
-        currentSceneIndex= SceneManager.GetActiveScene().buildIndex;
-        Debug.Log(currentSceneIndex);
-        SceneManager.LoadScene(currentSceneIndex + 1);
-}
+        public void SkipScene()
+        {
+                currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                Debug.Log(currentSceneIndex);
+                SceneManager.LoadScene(currentSceneIndex + 1);
+        }
 }

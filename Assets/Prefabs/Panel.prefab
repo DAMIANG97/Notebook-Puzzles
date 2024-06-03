@@ -1267,8 +1267,8 @@ MonoBehaviour:
     2. Tapping
     things could be useful.
 
-    3. The last two hints are the solution and the option
-    to skip the puzzle.
+    3. The last hint is the solution and the next tap
+    gives you the opportunity to skip the puzzle.
 
     4. Have fun!'
   m_isRightToLeft: 0
@@ -1778,7 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hintText: {fileID: 1182748457753993043}
   SkipButton: {fileID: 6490140050035208125}
-  HintButton: {fileID: 0}
+  HintButton: {fileID: 6563845774710518404}
   hints:
   - Draw a number.
   - Number of level.
