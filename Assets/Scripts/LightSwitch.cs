@@ -20,10 +20,18 @@ public class LightSwitch : MonoBehaviour
 
     private bool isWhite = true;
 
+    private void Start()
+    {
+        if (gameObject != null)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
     public void ChangeColor()
     {
         Color targetColor = isWhite ? Color.white : new Color(0, 0.14f, 0.44f);
-        Color phoneColor = isWhite ? new Color(1f,1f,1f,0.4f) : new Color(1f, 0.99f, 0, 0.42f);
+        Color phoneColor = isWhite ? new Color(1f, 1f, 1f, 0.4f) : new Color(1f, 0.99f, 0, 0.42f);
 
         foreach (Image image in imagesToChange)
         {
