@@ -20,14 +20,6 @@ public class LightSwitch : MonoBehaviour
 
     private bool isWhite = true;
 
-    private void Start()
-    {
-        if (gameObject != null)
-        {
-            gameObject.SetActive(false);
-        }
-    }
-
     public void ChangeColor()
     {
         Color targetColor = isWhite ? Color.white : new Color(0, 0.14f, 0.44f);

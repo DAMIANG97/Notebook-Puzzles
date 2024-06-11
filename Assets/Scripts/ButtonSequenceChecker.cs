@@ -13,11 +13,14 @@ public class ButtonSequenceChecker : MonoBehaviour
 
     void Start()
     {
-        Button[] buttonsInScene = FindObjectsOfType<Button>();
+        Button[] buttonsInScene = Resources.FindObjectsOfTypeAll<Button>();
         foreach (Button button in buttonsInScene)
         {
-            allButtons.Add(button);
-            button.onClick.AddListener(() => ButtonClicked(button));
+            if (button.gameObject.scene == this.gameObject.scene)
+            {
+                allButtons.Add(button);
+                button.onClick.AddListener(() => ButtonClicked(button));
+            }
         }
     }
 

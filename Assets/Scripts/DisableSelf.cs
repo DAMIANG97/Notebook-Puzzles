@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DisableSelf : MonoBehaviour
 {
-    public void disableSelf()
+    void Start()
     {
         gameObject.SetActive(false);
     }

@@ -8,17 +8,19 @@ public class MarkedButton : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        
-        Button[] buttons = FindObjectsOfType<Button>();
-        
+
+        Button[] buttons = Resources.FindObjectsOfTypeAll<Button>();
+
         foreach (Button button in buttons)
         {
-            if (button.tag != "NotToMark" && button.tag != "SilentButton")
+            if (button.gameObject.scene == this.gameObject.scene &&
+                button.tag != "NotToMark" && button.tag != "SilentButton")
             {
                 button.onClick.AddListener(PlayButtonClickSound);
             }
         }
     }
+
     void PlayButtonClickSound()
     {
         audioSource.Play();
