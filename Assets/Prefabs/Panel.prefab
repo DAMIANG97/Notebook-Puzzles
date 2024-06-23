@@ -745,7 +745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _androidGameId: 5595961
   _iOSGameId: 5595960
-  _testMode: 1
+  _testMode: 0
   rewardedAds: {fileID: 6635150359776427566}
 --- !u!114 &5471487843898766834
 MonoBehaviour:

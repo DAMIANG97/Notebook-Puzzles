@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public static class GameManager
 {
     public static int currentSceneIndex;
-    public static int lastStartedSceneIndex;
+    public static int lastStartedSceneIndex = 0;
 
     static GameManager()
     {
@@ -13,19 +13,19 @@ public static class GameManager
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
-private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-{
-    if (scene.name != "End" && scene.buildIndex > lastStartedSceneIndex)
+    private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        lastStartedSceneIndex = scene.buildIndex;
-        PlayerPrefs.SetInt("LastStartedSceneIndex", lastStartedSceneIndex);
-        PlayerPrefs.Save();
+        if (scene.name != "End" && scene.buildIndex > lastStartedSceneIndex)
+        {
+            lastStartedSceneIndex = scene.buildIndex;
+            PlayerPrefs.SetInt("LastStartedSceneIndex", lastStartedSceneIndex);
+            PlayerPrefs.Save();
+        }
+        if (scene.buildIndex != 0)
+        {
+            currentSceneIndex = scene.buildIndex;
+        }
     }
-if (scene.buildIndex !=0)
-    {
-        currentSceneIndex = scene.buildIndex;
-    }
-}
 
 
     public static void Incrementlevel()
