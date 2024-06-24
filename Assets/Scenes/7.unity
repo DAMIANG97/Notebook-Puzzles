@@ -1072,6 +1072,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1554337825}
     m_Modifications:
+    - target: {fileID: 1570832622366265316, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2530357791197517316, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_Name
       value: Panel
@@ -1178,6 +1182,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3407094442721348349, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6323888205505003035, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

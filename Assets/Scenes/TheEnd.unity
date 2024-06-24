@@ -569,8 +569,9 @@ GameObject:
   - component: {fileID: 560246685}
   - component: {fileID: 560246684}
   - component: {fileID: 560246683}
+  - component: {fileID: 560246686}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: Star 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,7 +640,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 560246684}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 560246686}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &560246684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,6 +691,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560246681}
   m_CullTransparentMesh: 1
+--- !u!114 &560246686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560246681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &723139886
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,8 +715,9 @@ GameObject:
   - component: {fileID: 723139890}
   - component: {fileID: 723139889}
   - component: {fileID: 723139888}
+  - component: {fileID: 723139891}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: Star 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -760,7 +786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 723139889}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 723139891}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &723139889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -799,6 +837,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 723139886}
   m_CullTransparentMesh: 1
+--- !u!114 &723139891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723139886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &755725061
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,8 +2105,9 @@ GameObject:
   - component: {fileID: 1751424058}
   - component: {fileID: 1751424057}
   - component: {fileID: 1751424056}
+  - component: {fileID: 1751424059}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: Star 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2125,7 +2176,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1751424057}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1751424059}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1751424057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2164,6 +2227,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751424054}
   m_CullTransparentMesh: 1
+--- !u!114 &1751424059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751424054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1752664506
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,8 +2386,9 @@ GameObject:
   - component: {fileID: 1775160694}
   - component: {fileID: 1775160693}
   - component: {fileID: 1775160692}
+  - component: {fileID: 1775160695}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Star 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2381,7 +2457,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1775160693}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1775160695}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1775160693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2420,6 +2508,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775160690}
   m_CullTransparentMesh: 1
+--- !u!114 &1775160695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775160690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1834139430
 GameObject:
   m_ObjectHideFlags: 0
@@ -2432,8 +2532,9 @@ GameObject:
   - component: {fileID: 1834139434}
   - component: {fileID: 1834139433}
   - component: {fileID: 1834139432}
+  - component: {fileID: 1834139435}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Star 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2502,7 +2603,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1834139433}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1834139435}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1834139433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2541,6 +2654,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834139430}
   m_CullTransparentMesh: 1
+--- !u!114 &1834139435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834139430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907481290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2948,7 @@ GameObject:
   - component: {fileID: 1951876982}
   - component: {fileID: 1951876981}
   - component: {fileID: 1951876980}
+  - component: {fileID: 1951876983}
   m_Layer: 5
   m_Name: Rate Up
   m_TagString: Untagged
@@ -2894,7 +3020,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1951876981}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1951876983}
+        m_TargetAssemblyTypeName: RateUp, Assembly-CSharp
+        m_MethodName: Rateup
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1951876981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2933,3 +3071,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951876977}
   m_CullTransparentMesh: 1
+--- !u!114 &1951876983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951876977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b7be25fa3b00224db88b4a054a2a80b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
