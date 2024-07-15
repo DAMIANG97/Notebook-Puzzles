@@ -10,7 +10,6 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
     private Hint hint;
-
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
