@@ -9,7 +9,7 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     [SerializeField] string _androidAdUnitId = "Rewarded_Android";
     [SerializeField] string _iOSAdUnitId = "Rewarded_iOS";
     string _adUnitId = null; // This will remain null for unsupported platforms
-    private Hint hint;
+
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
@@ -62,7 +62,6 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
         if (adUnitId.Equals(_adUnitId))
         {
             // Configure the button to call the ShowAd() method when clicked:
-            _showAdButton.onClick.AddListener(ShowAd);
             // Enable the button for users to click:
             _showAdButton.interactable = true;
         }
@@ -82,8 +81,11 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
     {
         if (adUnitId.Equals(_adUnitId) && showCompletionState.Equals(UnityAdsShowCompletionState.COMPLETED))
         {
-            hint = GameObject.Find("GetHintButton").GetComponent<Hint>();
-            hint.ChangeText();
+            // Increase the player's coins by 50
+            int currentCoins = PlayerPrefs.GetInt("Coins", 100);
+            PlayerPrefs.SetInt("Coins", currentCoins + 50);
+            PlayerPrefs.Save();
+
             LoadAd();
         }
     }
@@ -108,7 +110,5 @@ public class RewardedAds : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowLi
 
     void OnDestroy()
     {
-        // Clean up the button listeners:
-        _showAdButton.onClick.RemoveAllListeners();
     }
 }

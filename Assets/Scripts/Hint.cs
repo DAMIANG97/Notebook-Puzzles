@@ -37,9 +37,16 @@ public class Hint : MonoBehaviour
                 }
                 else
                 {
-                    hintText.text = $"({currentIndex + 1}/{hints.Count}) hint: {hints[currentIndex]}";
-                    currentIndex++;
-                    lastChangeTime = Time.time;
+                    int currentCoins = PlayerPrefs.GetInt("Coins", 100);
+                    if (currentCoins >= 50)
+                    {
+                        PlayerPrefs.SetInt("Coins", currentCoins - 50);
+                        PlayerPrefs.Save();
+                        hintText.text = $"({currentIndex + 1}/{hints.Count}) hint: {hints[currentIndex]}";
+                        currentIndex++;
+                        lastChangeTime = Time.time;
+
+                    }
                 }
             }
         }

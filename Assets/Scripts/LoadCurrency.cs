@@ -8,7 +8,7 @@ public class LoadCurrency : MonoBehaviour
     public TextMeshProUGUI CurrentValueText;
     void Update()
     {
-
-        CurrentValueText.text = "100";
+        int currentCoins = PlayerPrefs.GetInt("Coins", 100);
+        CurrentValueText.text = currentCoins.ToString();
     }
 }
