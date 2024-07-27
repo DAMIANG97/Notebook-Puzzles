@@ -8,6 +8,8 @@ public class Hint : MonoBehaviour
     public TextMeshProUGUI hintText;
     public GameObject SkipButton;
     public GameObject HintButton;
+    public Button InfoButton;
+    public TextMeshProUGUI InfoText;
     private int currentIndex = 0;
     public List<string> hints = new List<string>();
 
@@ -46,6 +48,11 @@ public class Hint : MonoBehaviour
                         currentIndex++;
                         lastChangeTime = Time.time;
 
+                    }
+                    else
+                    {
+                        InfoText.text = "You don't have enough erasers.";
+                        InfoButton.gameObject.SetActive(true);
                     }
                 }
             }

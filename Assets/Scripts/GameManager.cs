@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public static class GameManager
@@ -61,8 +62,38 @@ public static class GameManager
         SceneManager.LoadScene(0);
     }
 
+
     public static void LoadNextScene()
     {
-        SceneManager.LoadScene(currentSceneIndex + 1);
+        string objectName = "PopUpRateUp";
+
+        GameObject rateUp = FindInactiveObjectByName(objectName);
+
+        if (rateUp != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            bool isButtonActive = rateUp.activeSelf;
+            rateUp.SetActive(!isButtonActive);
+        }
+        else
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex + 1);
+        }
+    }
+
+    private static GameObject FindInactiveObjectByName(string name)
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.name == name && obj.hideFlags == HideFlags.None)
+            {
+                return obj;
+            }
+        }
+        return null;
     }
 }
+
+
