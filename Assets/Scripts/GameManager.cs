@@ -67,11 +67,14 @@ public static class GameManager
     {
         string objectName = "PopUpRateUp";
 
+        // Znajdź obiekt, nawet jeśli jest nieaktywny
         GameObject rateUp = FindInactiveObjectByName(objectName);
 
         if (rateUp != null)
         {
-            EventSystem.current.SetSelectedGameObject(null);
+            // Ukryj klawiaturę
+            HideKeyboard();
+
             bool isButtonActive = rateUp.activeSelf;
             rateUp.SetActive(!isButtonActive);
         }
@@ -82,17 +85,25 @@ public static class GameManager
         }
     }
 
+    // Metoda do znajdowania nieaktywnego obiektu po nazwie
     private static GameObject FindInactiveObjectByName(string name)
     {
         GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
         foreach (GameObject obj in allObjects)
         {
-            if (obj.name == name && obj.hideFlags == HideFlags.None)
+            if (obj.name == name && obj.hideFlags == HideFlags.None && obj.scene == SceneManager.GetActiveScene())
             {
                 return obj;
             }
         }
         return null;
+    }
+
+    // Metoda do ukrycia klawiatury
+    private static void HideKeyboard()
+    {
+        // Usuwanie fokusu z aktywnego pola wejściowego
+        EventSystem.current.SetSelectedGameObject(null);
     }
 }
 

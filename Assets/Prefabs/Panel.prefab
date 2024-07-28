@@ -132,7 +132,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.4
+  m_fontSize: 24
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1943,8 +1943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.0724, y: -24.567}
-  m_SizeDelta: {x: 224.1016, y: 267.6679}
+  m_AnchoredPosition: {x: -2.0724, y: -41.4711}
+  m_SizeDelta: {x: 224.1016, y: 298.9038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2076546514897792052
 CanvasRenderer:
@@ -1976,8 +1976,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "1. Green sticky note shows the erasers you have.\n2. Yellow for skip.
     \n3. Orange to get more erasers.\n4. Hint button to get clue.\n5. Tapping things
-    could be useful.\n6. The last hint is the solution and the next tap gives you
-    the opportunity to skip the puzzle for free.\n7. Have fun!"
+    could be useful.\n6. Have fun!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f0531aea43015f24e8515abcaf3f2883, type: 2}
   m_sharedMaterial: {fileID: 8150514673137903597, guid: f0531aea43015f24e8515abcaf3f2883, type: 2}
@@ -2004,12 +2003,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.95
+  m_fontSize: 23
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
-  m_fontSizeMax: 26
+  m_fontSizeMin: 21
+  m_fontSizeMax: 23
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
