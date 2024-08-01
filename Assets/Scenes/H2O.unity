@@ -195,6 +195,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PopUpRateUp
       objectReference: {fileID: 0}
+    - target: {fileID: 2581244173664144581, guid: 2da78b5621e23b14caabe9e0a2e0d50a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4456217818333775499, guid: 2da78b5621e23b14caabe9e0a2e0d50a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -261,7 +265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4456217818333775499, guid: 2da78b5621e23b14caabe9e0a2e0d50a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 4456217818333775499, guid: 2da78b5621e23b14caabe9e0a2e0d50a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1079,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -24}
   m_SizeDelta: {x: 310, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2007960529
