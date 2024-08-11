@@ -708,6 +708,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6997627215221759835, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
+      propertyPath: _adUnitId
+      value: ca-app-pub-1287137257492728/4569923794
+      objectReference: {fileID: 0}
     - target: {fileID: 7786822227672127106, guid: e3b7b57cde681ca41a79a2aa679000e9, type: 3}
       propertyPath: m_text
       value: 
