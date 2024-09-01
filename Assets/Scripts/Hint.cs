@@ -2,15 +2,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class Hint : MonoBehaviour
 {
     public TextMeshProUGUI hintText;
     public GameObject SkipButton;
     public GameObject HintButton;
-    public Button InfoButton;
-    public TextMeshProUGUI InfoText;
-    private int currentIndex = 0; // Zaczynamy od 0
+    private int currentIndex = 0;
     public List<string> hints = new List<string>();
 
     private float lastChangeTime;
@@ -21,49 +21,55 @@ public class Hint : MonoBehaviour
     {
         lastChangeTime = -minChangeInterval;
         SkipButton.SetActive(false);
-
-
-        hintText.text = $"(1/{hints.Count}) hint: {hints[currentIndex]}";
-        currentIndex = currentIndex + 1;
     }
 
     public void ChangeText()
     {
+        string objectName = "RateUpHint";
+
+        GameObject rateUp = FindInactiveObjectByName(objectName);
         if (Time.time - lastChangeTime >= minChangeInterval)
         {
             if (!hintsCompleted)
             {
-                // Sprawdzenie, czy są dostępne wskazówki
-                if (currentIndex < hints.Count)
+                if (PlayerPrefs.GetInt("hasRated", 0) == 0 & currentIndex == 0)
                 {
-                    int currentCoins = PlayerPrefs.GetInt("Coins", 100);
-                    if (currentCoins >= 50)
+                    if (rateUp != null)
                     {
-                        PlayerPrefs.SetInt("Coins", currentCoins - 50);
-                        PlayerPrefs.Save();
+                        EventSystem.current.SetSelectedGameObject(null);
 
-                        // Wyświetlenie wskazówki
-                        hintText.text = $"({currentIndex + 1}/{hints.Count}) hint: {hints[currentIndex]}";
-                        currentIndex++; // Zwiększenie indexu po wyświetleniu
-
-                        // Sprawdzenie, czy to ostatnia wskazówka
-                        if (currentIndex > hints.Count)
-                        {
-                            hintsCompleted = true;
-                            SkipButton.SetActive(true);
-                            HintButton.SetActive(false);
-                            hintText.text = ""; // Opcjonalne, aby wyczyścić pole tekstowe
-                        }
-
-                        lastChangeTime = Time.time;
-                    }
-                    else
-                    {
-                        InfoText.text = "You don't have enough erasers.";
-                        InfoButton.gameObject.SetActive(true);
+                        bool isButtonActive = rateUp.activeSelf;
+                        rateUp.SetActive(!isButtonActive);
                     }
                 }
+
+                if (currentIndex < hints.Count)
+                {
+                    hintText.text = $"({currentIndex + 1}/{hints.Count}) hint: {hints[currentIndex]}";
+                    currentIndex++;
+                    lastChangeTime = Time.time;
+                }
+                else
+                {
+                    hintsCompleted = true;
+                    SkipButton.SetActive(true);
+                    HintButton.SetActive(false);
+                    hintText.text = "";
+                }
+
             }
         }
+    }
+    private static GameObject FindInactiveObjectByName(string name)
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.name == name && obj.hideFlags == HideFlags.None && obj.scene == SceneManager.GetActiveScene())
+            {
+                return obj;
+            }
+        }
+        return null;
     }
 }
